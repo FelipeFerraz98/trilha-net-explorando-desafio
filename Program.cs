@@ -23,3 +23,12 @@ reserva.CadastrarHospedes(hospedes);
 // Exibe a quantidade de hóspedes e o valor da diária
 Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
 Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria()}");
+
+// Cria uma nova reserva, passando a suíte e os hóspedes
+Reserva reserva2 = new Reserva(diasReservados: 10);
+reserva2.CadastrarSuite(suite);
+reserva2.CadastrarHospedes(hospedes);
+
+// Exibe a quantidade de hóspedes e o valor da diária
+Console.WriteLine($"Hóspedes: {reserva2.ObterQuantidadeHospedes()}");
+Console.WriteLine($"Valor diária: {reserva2.CalcularValorDiaria()}");
